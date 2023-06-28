@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sunshine">
+
+    <include
+        layout="@layout/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/weather_icon_android"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20sp" />
+
+
+    <TextView
+        android:id="@+id/textViewTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="48sp"
+        android:layout_marginTop="40sp"
+        android:textColor="@android:color/black"
+        android:text="25°C" />
+
+    <TextView
+        android:id="@+id/textViewCityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:text="Mountain View" />
+
+    <TextView
+        android:id="@+id/textViewWeatherDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="Partly Cloudy" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageViewHumidityIcon"
+            android:layout_width="40sp"
+            android:layout_height="30sp"
+            android:src="@drawable/humidity_icon"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:text="Humidity: 60%" />
+
+        <ImageView
+            android:id="@+id/imageViewWindIcon"
+            android:layout_width="50sp"
+            android:layout_height="40sp"
+            android:src="@drawable/wind_icon"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewWindSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:text="Wind: 10 km/h" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                app:cardCornerRadius="8dp">
+
+                <TextView
+                    android:id="@+id/textViewLocalTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                app:cardCornerRadius="8dp">
+
+                <TextView
+                    android:id="@+id/textViewUV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UV"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                app:cardCornerRadius="8dp">
+
+                <TextView
+                    android:id="@+id/textViewPrecipMm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Precipitation"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                app:cardCornerRadius="8dp">
+
+                <TextView
+                    android:id="@+id/textViewFeelsLikeC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feels Like:"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:id="@+id/textViewGustWind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gust Speed"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/buttonChangeLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Change location"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

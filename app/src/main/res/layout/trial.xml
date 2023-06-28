@@ -1,0 +1,64 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Buttons at the top -->
+
+
+    <!-- Four parts of the screen -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- First part -->
+        <FrameLayout
+            android:id="@+id/part1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true">
+
+            <!-- Content for part 1 -->
+
+        </FrameLayout>
+
+        <!-- Second part -->
+        <FrameLayout
+            android:id="@+id/part2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/part1"
+            android:layout_alignParentTop="true">
+
+            <!-- Content for part 2 -->
+
+        </FrameLayout>
+
+        <!-- Third part -->
+        <FrameLayout
+            android:id="@+id/part3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/part1">
+
+            <!-- Content for part 3 -->
+
+        </FrameLayout>
+
+        <!-- Fourth part -->
+        <FrameLayout
+            android:id="@+id/part4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/part3"
+            android:layout_below="@id/part2">
+
+            <!-- Content for part 4 -->
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/idCurrentButton"
+        style="@style/ButtonStyle"
+        android:text="Current"
+        />
+
+    <Button
+        android:id="@+id/idForecastButton"
+        style="@style/ButtonStyle"
+        android:text="forecast"
+        />
+
+    <Button
+        android:id="@+id/idAstroButton"
+        style="@style/ButtonStyle"
+        android:text="astro"
+        />
+
+    <Button
+        android:id="@+id/idHourlyButton"
+        style="@style/ButtonStyle"
+        android:text="hourly"
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sunshine">
+
+    <include
+        layout="@layout/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/card_background">
+
+                <ImageView
+                    android:id="@+id/sunRiseImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sunrise_icon"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/sunRiseTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="Sun Rise" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/card_background">
+
+                <ImageView
+                    android:id="@+id/sunSetImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sunset_icon"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/sunSetTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="Sun Set" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/card_background">
+
+                <ImageView
+                    android:id="@+id/moonRiseImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/moonrise_icon"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/moonRiseTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="moonRise" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/card_background">
+
+                <ImageView
+                    android:id="@+id/moonSetImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/moonset_icon"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/moonSetTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="Moon Set" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/card_background">
+
+                <ImageView
+                    android:id="@+id/moon_phaseImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/moonphase_icon"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/moon_phaseTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="moon_phase" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

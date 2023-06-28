@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sunshine">
+
+    <include
+        layout="@layout/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/card_background">
+
+                <ImageView
+                    android:id="@+id/maxTemperatureImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/temperature_icon"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/maxTemperatureTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="Max Temperature" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/card_background">
+
+                <ImageView
+                    android:id="@+id/minTemperatureImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/temperature_icon"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/minTemperatureTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="Min Temperature" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/card_background">
+
+                <ImageView
+                    android:id="@+id/avgTemperatureImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/temperature_icon"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/avgTemperatureTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="Avg Temperature" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/card_background">
+
+                <ImageView
+                    android:id="@+id/rainChancesImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rain_icon"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/rainChancesTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="Rain Chances" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/card_background">
+
+                <ImageView
+                    android:id="@+id/snowChancesImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/snow_gif_icon"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/snowChancesTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="Snow Chances" />
+
+            </LinearLayout>
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:background="@drawable/card_background">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/dateImageView"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/calender_icon"-->
+<!--                    android:layout_gravity="center_horizontal"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/dateTextView"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:text="Date" />-->
+
+<!--            </LinearLayout>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
