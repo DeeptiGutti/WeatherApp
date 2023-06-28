@@ -26,7 +26,7 @@ public class WeatherAPICall {
     private static WeatherAPICall instance;
     private RequestQueue requestQueue;
     private Context context;
-    private String key = "400ae0732fbf40c18e1204402232206";
+    private String key = "Enter the key from https://www.weatherapi.com";
 
     private WeatherAPICall(Context context) {
         this.context = context.getApplicationContext();
